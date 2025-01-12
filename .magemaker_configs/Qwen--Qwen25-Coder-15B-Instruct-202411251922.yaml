@@ -1,0 +1,15 @@
+deployment: !Deployment
+  destination: aws
+  endpoint_name: Qwen--Qwen25-Coder-15B-Instruct-202411251922
+  instance_count: 1
+  instance_type: ml.m5.xlarge
+  num_gpus: null
+  quantization: null
+models:
+- !Model
+  id: Qwen/Qwen2.5-Coder-1.5B-Instruct
+  location: null
+  predict: null
+  source: huggingface
+  task: text-generation
+  version: null
